@@ -6,6 +6,12 @@ const app = express();
 const cors = require("cors");
 const crypto = require("crypto");
 const brevo = require("@getbrevo/brevo");
+const bodyParser = require('body-parser');
+const cloudinary = require('cloudinary').v2;
+const multer = require('multer');
+
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 const DEEPRACER_LEADEBOARD_URL =
   "http://production-final.eba-ydrk8uer.us-east-1.elasticbeanstalk.com/list_leaderboard?leaderboard_arn=arn:aws:deepracer::520937361444:leaderboard/70e7ab0a-42fe-4d54-aeb6-17667ee860d8";
@@ -14,87 +20,150 @@ app.use(cors()); // Esto permitirá todas las solicitudes CORS
 
 app.use(express.json());
 
+const storage = multer.memoryStorage(); 
+const upload = multer({ storage });
+
 app.get("/", (req, res) => {
   res.send("Node JS api");
 });
 
-app.post("/api/usuarios", async (req, res) => {
-  const { name, lastname, email, password, dni, birthDate, gender, status } =
-    req.body;
+cloudinary.config({
+  cloud_name: 'dcjq2ozpj',
+  api_key: '454188433292296',
+  api_secret: 'vVGg9E1z-2rr86OJ0fYL-OWnVao',
+  secure: true,
+});
 
-  if (
-    !name ||
-    !lastname ||
-    !email ||
-    !password ||
-    !dni ||
-    !birthDate ||
-    !gender
-  ) {
-    return res.status(400).send("Todos los campos son obligatorios.");
+const ldapServerUrl = 'ldap://34.231.51.201:389';
+const adminDN = 'cn=admin,dc=deliverar,dc=com';
+const adminPassword = 'admin';
+const ldapClient = ldap.createClient({
+url: ldapServerUrl,
+tlsOptions: {},
+});
+
+app.post('/api/usuarios', async (req, res) => {
+  const {
+    name,
+    lastname,
+    email,
+    password,
+    dni,
+    birthDate,
+    gender,
+    avatar, 
+  } = req.body;
+
+  if (!name || !lastname || !email || !password || !dni || !birthDate || !gender) {
+    return res.status(400).send('Todos los campos son obligatorios.');
   }
 
   // Verificar si el CN ya existe
   const existingUsers = await searchUsuariosPorCN(name);
 
   if (existingUsers.length > 0) {
-    return res.status(400).send("El CN ya está en uso por otro usuario.");
+    return res.status(400).send('El CN ya está en uso por otro usuario.');
   }
-
-  const ldapServerUrl = "ldap://34.231.51.201:389/";
-  const adminDN = "cn=admin,dc=deliverar,dc=com";
-  const adminPassword = "admin";
-
-  const ldapClient = ldap.createClient({
-    url: ldapServerUrl,
-    tlsOptions: {},
-  });
 
   ldapClient.bind(adminDN, adminPassword, (bindError) => {
     if (bindError) {
-      console.error(
-        "Fallo al autenticarse en el servidor LDAP sin SSL:",
-        bindError
-      );
+      console.error('Fallo al autenticarse en el servidor LDAP sin SSL:', bindError);
+      res.status(500).send('Error al autenticarse en el servidor LDAP.');
     } else {
-      console.log("Conexión exitosa al servidor LDAP sin SSL");
-    }
+      console.log('Conexión exitosa al servidor LDAP sin SSL');
 
-    const nuevoUsuarioLDAP = {
-      objectClass: ["top", "posixAccount", "inetOrgPerson"],
-      cn: name,
-      sn: lastname,
-      givenName: name,
-      uid: email,
-      userPassword: password,
-      uidNumber: "1003",
-      gidNumber: "501",
-      homeDirectory: `/home/users/${email}`,
-      loginShell: "/bin/bash",
-      mail: email,
-      postalCode: birthDate,
-      carLicense: dni,
-    };
+      const nuevoUsuarioLDAP = {
+        objectClass: ['top', 'posixAccount', 'inetOrgPerson'],
+        cn: name,
+        sn: lastname,
+        uid: email,
+        userPassword: password,
+        uidNumber: '1003',
+        gidNumber: '501',
+        homeDirectory: `/home/users/${name + lastname}`,
+        loginShell: '/bin/bash',
+        mail: email,
+        postalCode: birthDate,
+        carLicense: dni,
+      };
 
-    ldapClient.add(
-      `cn=${name} ${lastname},ou=users,dc=deliverar,dc=com`,
-      nuevoUsuarioLDAP,
-      (addError) => {
-        if (addError) {
-          console.error(
-            "Error al agregar usuario en el servidor LDAP:",
-            addError
-          );
-          res.status(500).send("Error al agregar usuario en el servidor LDAP");
-        } else {
-          console.log("Usuario creado con éxito en el servidor LDAP");
-          res.status(201).send("Usuario creado con éxito en el servidor LDAP");
+      if (avatar) {
+        // Si se proporciona una imagen, se  carga en Cloudinary
+        cloudinary.uploader.upload_stream({ resource_type: 'auto' }, (error, result) => {
+          if (error) {
+            console.error(error);
+            return res.status(500).json({ error: 'Error al cargar la imagen en Cloudinary.' });
+          } else {
+            const imageUrl = result.url;
+            console.log(`URL de la imagen: ${imageUrl}`);
+            nuevoUsuarioLDAP.givenName = imageUrl;
+            // agregamos el usuario al servidor LDAP
+            ldapClient.add(`cn=${nuevoUsuarioLDAP.cn},ou=users,dc=deliverar,dc=com`, nuevoUsuarioLDAP, (addError) => {
+              if (addError) {
+                console.error('Error al agregar usuario en el servidor LDAP:', addError);
+                res.status(500).send('Error al agregar usuario en el servidor LDAP');
+              } else {
+                console.log('Usuario creado con éxito en el servidor LDAP');
+                res.status(201).send('Usuario creado con éxito en el servidor LDAP');
+              }
+              ldapClient.unbind();
+            });
+          }
+        }).end(avatar);
+      } else {
+        // Si no se proporciona una imagen, creamos usuario sin foto
+        try {
+          addUsuarioToLDAP(nuevoUsuarioLDAP);
+          console.log('Usuario creado con éxito en el servidor LDAP');
+          res.status(201).send('Usuario creado con éxito en el servidor LDAP');
+        } catch (ldapError) {
+          console.error('Error al agregar usuario en el servidor LDAP:', ldapError);
+          res.status(500).send('Error al agregar usuario en el servidor LDAP');
         }
-        ldapClient.unbind();
       }
-    );
+    }
   });
 });
+
+// Función para agregar el usuario en LDAP
+function addUsuarioToLDAP(nuevoUsuarioLDAP, res) {
+  ldapClient.add(`cn=${nuevoUsuarioLDAP.cn},ou=users,dc=deliverar,dc=com`, nuevoUsuarioLDAP, (addError) => {
+    if (addError) {
+      console.error('Error al agregar usuario en el servidor LDAP:', addError);
+      res.status(500).send('Error al agregar usuario en el servidor LDAP');
+    } else {
+      console.log('Usuario creado con éxito en el servidor LDAP');
+      res.status(201).send('Usuario creado con éxito en el servidor LDAP');
+    }
+    ldapClient.unbind();
+  });
+}
+
+
+// Función para buscar usuarios por CN en el servidor LDAP
+async function searchUsuariosPorCN(cn) {
+  return new Promise((resolve, reject) => {
+    ldapClient.search('ou=users,dc=deliverar,dc=com', {
+      filter: `(cn=${cn})`,
+      scope: 'sub',
+    }, (searchError, searchResult) => {
+      if (searchError) {
+        reject(searchError);
+      }
+
+      const users = [];
+
+      searchResult.on('searchEntry', (entry) => {
+        users.push(entry.object);
+      });
+
+      searchResult.on('end', () => {
+        resolve(users);
+      });
+    });
+  });
+}
+
 
 app.get("/api/GetAllUsuarios", (req, res) => {
   const ldapServerUrl = "ldap://34.231.51.201:389/";
@@ -197,14 +266,23 @@ app.get("/api/BuscarUsuariosPorCN", (req, res) => {
   });
 });
 
-app.put("/api/usuarios/:cn", async (req, res) => {
+app.put('/api/usuarios/:cn', async (req, res) => {
   const cn = req.params.cn;
-  const { name, lastname, email, password, dni, birthDate, gender, status } =
-    req.body;
+  const {
+    name,
+    lastname,
+    email,
+    password,
+    dni,
+    birthDate,
+    gender,
+    status,
+    avatar
+  } = req.body;
 
-  const ldapServerUrl = "ldap://34.231.51.201:389/";
-  const adminDN = "cn=admin,dc=deliverar,dc=com";
-  const adminPassword = "admin";
+  const ldapServerUrl = 'ldap://34.231.51.201:389/';
+  const adminDN = 'cn=admin,dc=deliverar,dc=com';
+  const adminPassword = 'admin';
 
   const ldapClient = ldap.createClient({
     url: ldapServerUrl,
@@ -212,79 +290,75 @@ app.put("/api/usuarios/:cn", async (req, res) => {
 
   ldapClient.bind(adminDN, adminPassword, (bindError) => {
     if (bindError) {
-      console.error("Fallo al autenticarse en el servidor LDAP:", bindError);
-      res.status(500).send("Error al autenticarse en el servidor LDAP");
+      console.error('Fallo al autenticarse en el servidor LDAP:', bindError);
+      res.status(500).send('Error al autenticarse en el servidor LDAP');
       return;
     }
 
     const modifyChanges = [
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "givenName",
+          type: 'cn',
           values: [name],
         }),
       }),
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "sn",
+          type: 'sn',
           values: [lastname],
         }),
       }),
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "uid",
+          type: 'uid',
           values: [email],
         }),
       }),
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "userPassword",
+          type: 'userPassword',
           values: [password],
         }),
       }),
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "postalCode",
+          type: 'postalCode',
           values: [birthDate],
         }),
       }),
       new ldap.Change({
-        operation: "replace",
+        operation: 'replace',
         modification: new ldap.Attribute({
-          type: "carLicense",
+          type: 'carLicense',
           values: [dni],
+        }),
+      }),
+      new ldap.Change({
+        operation: 'replace',
+        modification: new ldap.Attribute({
+          type: 'givenName',
+          values: [avatar], 
         }),
       }),
     ];
 
-    console.log("Contenido de modifyChanges:", modifyChanges);
+    console.log('Contenido de modifyChanges:', modifyChanges);
 
-    ldapClient.modify(
-      `cn=${cn},ou=users,dc=deliverar,dc=com`,
-      modifyChanges,
-      (modifyError) => {
-        if (modifyError) {
-          console.error(
-            "Error al modificar usuario en el servidor LDAP:",
-            modifyError
-          );
-          res
-            .status(500)
-            .send("Error al modificar usuario en el servidor LDAP");
-        } else {
-          console.log("Usuario modificado con éxito en el servidor LDAP");
-          res
-            .status(200)
-            .send("Usuario modificado con éxito en el servidor LDAP");
-        }
-        ldapClient.unbind();
+    ldapClient.modify(`cn=${cn},ou=users,dc=deliverar,dc=com`, modifyChanges, (modifyError) => {
+      if (modifyError) {
+        console.error('Error al modificar usuario en el servidor LDAP:', modifyError);
+        res.status(500).send('Error al modificar usuario en el servidor LDAP');
+      } else {
+        console.log('Usuario modificado con éxito en el servidor LDAP');
+        res.status(200).send('Usuario modificado con éxito en el servidor LDAP');
       }
-    );
+      ldapClient.unbind();
+    });
   });
 });
 
