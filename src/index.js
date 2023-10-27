@@ -164,6 +164,44 @@ async function searchUsuariosPorCN(cn) {
   });
 }
 
+app.delete('/api/deleteUsers/:id', async (req, res) => {
+  const userId = req.params.id;
+
+  if (!userId) {
+    return res.status(400).send('El ID del usuario es obligatorio.');
+  }
+
+  const ldapServerUrl = 'ldap://52.91.48.141:389';
+  const adminDN = 'cn=admin,dc=deliverar,dc=com';
+  const adminPassword = 'Str0ngLd4p5Pwd';
+
+  const ldapClient = ldap.createClient({
+    url: ldapServerUrl,
+    tlsOptions: {},
+  });
+
+  ldapClient.bind(adminDN, adminPassword, (bindError) => {
+    if (bindError) {
+      console.error('Fallo al autenticarse en el servidor LDAP sin SSL:', bindError);
+      res.status(500).send('Error al autenticarse en el servidor LDAP.');
+    } else {
+      console.log('Conexión exitosa al servidor LDAP sin SSL');
+
+      // Elimina el usuario
+      ldapClient.del(`cn=${userId},ou=users,dc=deliverar,dc=com`, (deleteError) => {
+        if (deleteError) {
+          console.error('Error al eliminar usuario en el servidor LDAP:', deleteError);
+          res.status(500).send('Error al eliminar usuario en el servidor LDAP');
+        } else {
+          console.log('Usuario eliminado con éxito en el servidor LDAP');
+          res.status(204).send('Usuario eliminado con éxito en el servidor LDAP');
+        }
+        ldapClient.unbind();
+      });
+    }
+  });
+});
+
 
 app.get("/api/GetAllUsuarios", (req, res) => {
   const ldapServerUrl = "ldap://34.231.51.201:389/";
@@ -421,8 +459,7 @@ app.get("/api/LoginUid", async (req, res) => {
   ldapClient.bind(adminDN, adminPassword, async (bindError) => {
     if (bindError) {
       console.error("Fallo al autenticarse en el servidor LDAP:", bindError);
-      res.status(500).send("Error al autenticarse en el servidor LDAP");
-      return;
+      return res.status(500).json({ status: "Error al autenticarse en el servidor LDAP" });
     }
 
     const uid = req.query.uid;
@@ -434,26 +471,26 @@ app.get("/api/LoginUid", async (req, res) => {
       const bloqueado = await estaBloqueado(usuarioDN);
       console.log("bloqueado??: ", bloqueado);
       if (bloqueado === "1") {
-        return res.status(500).send("Usuario Bloqueado");
+        return res.status(500).json({ status: "Usuario Bloqueado" });
       }
       ldapClient.bind(usuarioDN, pass, (err) => {
         if (err) {
           console.error("Error de autenticación:", err);
           incrementAndCheckStAndL(usuarioDN);
-          res.status(500).send("Credenciales Inválidas");
-          return;
+          return res.status(500).json({ status: "Credenciales Inválidas" });
         }
         console.log("Autenticación exitosa");
         blanquearContador(usuarioDN);
         ldapClient.unbind();
-        res.status(200).send("ok");
+        return res.status(200).json({ status: "ok" });
       });
     } catch (searchError) {
       console.error("Error en la búsqueda LDAP:", searchError);
-      res.status(500).send("No se encontró el usuario en e LDAP");
+      return res.status(500).json({ status: "No se encontró el usuario en el LDAP" });
     }
   });
 });
+
 
 app.get("/api/Login", (req, res) => {
   const ldapServerUrl = "ldap://34.231.51.201:389/";
