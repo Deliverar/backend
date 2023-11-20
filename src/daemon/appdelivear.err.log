@@ -1,0 +1,34 @@
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
