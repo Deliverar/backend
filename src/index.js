@@ -1934,6 +1934,21 @@ app.get('/api/LoginQr', async (req, res) => {
       if (bloqueado === '1') {
         return res.status(500).send('Usuario Bloqueado');
       }
+        //Inicio Evento actividad usuario
+        stompClient.publish({
+          destination: "/app/send/admin-personal",
+          body: JSON.stringify({
+            sender: "admin-personal",
+            created_at: new Date().getTime(),
+            event_name: "user_QR_access",
+            data: {
+              email: uid, 
+              url: "http://deliver.ar-frontend.s3-website-us-east-1.amazonaws.com/",
+              evento: "QR-login", //ok
+            },
+          }),
+        });
+        //Fin Evento actividad usuario
       res.status(200).json({ status: "http://deliver.ar-frontend.s3-website-us-east-1.amazonaws.com/" })//res.status(200).send('ok');
     } catch (searchError) {
       console.error('Error en la búsqueda LDAP:', searchError);
