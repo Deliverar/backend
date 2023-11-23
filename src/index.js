@@ -1934,7 +1934,7 @@ app.get('/api/LoginQr', async (req, res) => {
       if (bloqueado === '1') {
         return res.status(500).send('Usuario Bloqueado');
       }
-      res.status(200).send('ok');
+      res.status(200).json({ status: "http://deliver.ar-frontend.s3-website-us-east-1.amazonaws.com/" })//res.status(200).send('ok');
     } catch (searchError) {
       console.error('Error en la búsqueda LDAP:', searchError);
       res.status(500).send('No se encontró el usuario en e LDAP');
