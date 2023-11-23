@@ -515,7 +515,7 @@ app.get("/api/LoginUidApp", async (req, res) => {
         console.log("Autenticación exitosa");
         blanquearContador(usuarioDN);
         ldapClient.unbind();
-        return res.status(200).json({ status: "ok" });//res.status(200).send("ok");
+        return res.status(200).json({ status: "ok" }); //res.status(200).send("ok");
       });
     } catch (searchError) {
       console.error("Error en la búsqueda LDAP:", searchError);
@@ -618,7 +618,7 @@ app.get("/api/Login", (req, res) => {
       }
       console.log("Autenticación exitosa");
       ldapClient.unbind();
-      return res.status(200).json({ status: "ok" });//res.status(200).send("ok");
+      return res.status(200).json({ status: "ok" }); //res.status(200).send("ok");
     });
   });
 });
@@ -1411,7 +1411,71 @@ app.get("/api/grupos-ldap", (req, res) => {
       searchRes.on("end", () => {
         // Cierra la conexión al servidor LDAP
         ldapClient.unbind();
+       
+       
+        //Inicio Evento cantidad empleados por grupo
+        //primero calculo las cantidades
+        var cantidadDeElementosCEO = groups[0].attributes[3].values.length;//grupo CEO
+        var cantidadDeElementosPagos = groups[1].attributes[3].values.length;//grupo Pagos
+        var cantidadDeElementosRobots = groups[2].attributes[3].values.length;//grupo Robots
+        //var cantidadDeElementosCliente = groups[3].attributes[3].values.length;//grupo Cliente
+        var cantidadDeElementosBancario = groups[4].attributes[3].values.length;//grupo Bancario
+        var cantidadDeElementosContable  = groups[5].attributes[3].values.length;//grupo Contable
+        var cantidadDeElementosUsuarios = groups[6].attributes[3].values.length;//grupo Usuarios
+        var cantidadDeElementosAnalitica = groups[7].attributes[3].values.length;//grupo Analitica  
+        var cantidadDeElementosMarketplace = groups[8].attributes[3].values.length;//grupo Marketplace
+        var cantidadDeElementosAdministradores = groups[9].attributes[3].values.length;//grupo Administradores
 
+
+        stompClient.publish({
+          destination: "/app/send/admin-personal",
+          body: JSON.stringify({
+            sender: "admin-personal",
+            created_at: new Date().getTime(),
+            event_name: "groups_analytics",
+            data: [
+              {
+                //grupo: groups[0].attributes[1].values,//numero de grupo
+                grupo: groups[0].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosCEO//cantidad de elementos
+              }, 
+              {
+                grupo: groups[1].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosPagos//cantidad de elementos
+              },
+              {
+                grupo: groups[2].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosRobots//cantidad de elementos
+              },
+              {
+                grupo: groups[4].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosBancario//cantidad de elementos
+              },
+              {
+                grupo: groups[5].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosContable//cantidad de elementos
+              },
+              {
+                grupo: groups[6].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosUsuarios//cantidad de elementos
+              },
+              {
+                grupo: groups[7].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosAnalitica//cantidad de elementos
+              },
+              {
+                grupo: groups[8].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosMarketplace//cantidad de elementos
+              },
+              {
+                grupo: groups[9].attributes[0].values,//Nombre de grupo
+                cantidad: cantidadDeElementosAdministradores//cantidad de elementos
+              },
+            ],
+          }),
+        });
+        //Fin Evento cantidad empleados por grupo
+        
         // Devuelve los grupos como JSON
         return res.json(groups);
       });
@@ -1694,7 +1758,6 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
     });
 });
 
-
 //Este endpoint notifica el resultado de la carrera
 app.get("/api/deepracer/notify", async (req, res) => {
   http
@@ -1704,7 +1767,7 @@ app.get("/api/deepracer/notify", async (req, res) => {
       // Un fragmento de datos ha sido recibido.
       httpRes.on("data", (chunk) => {
         data += chunk;
-        //Inicio Evento creacion usuario
+        //Inicio Evento resultado de carrera
         stompClient.publish({
           destination: "/app/send/admin-personal",
           body: JSON.stringify({
@@ -1716,7 +1779,7 @@ app.get("/api/deepracer/notify", async (req, res) => {
             },
           }),
         });
-        //Fin Evento creacion usuario
+        //Fin Evento resultado de carrera
       });
 
       // La respuesta completa ha sido recibida. Procesar el resultado.
@@ -1734,8 +1797,6 @@ app.get("/api/deepracer/notify", async (req, res) => {
       res.status(500).send("Internal Server Error");
     });
 });
-
-
 
 async function searchUsuariosPorCNN(cn) {
   return new Promise((resolve, reject) => {
