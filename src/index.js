@@ -64,6 +64,8 @@ app.post("/api/usuarios", async (req, res) => {
   // Verificar si el CN ya existe
   const existingUsers = await searchUsuariosPorCN(name);
 
+  console.log("Usuarios encontrados:", existingUsers);
+
   if (existingUsers.length > 0) {
     return res.status(400).send("El CN ya está en uso por otro usuario.");
   }
@@ -193,31 +195,48 @@ function addUsuarioToLDAP(nuevoUsuarioLDAP, res) {
 // Función para buscar usuarios por CN en el servidor LDAP
 async function searchUsuariosPorCN(cn) {
   return new Promise((resolve, reject) => {
-    ldapClient.search(
-      "ou=users,dc=deliverar,dc=com",
-      {
-        filter: `(cn=${cn})`,
-        scope: "sub",
-      },
-      (searchError, searchResult) => {
-        if (searchError) {
-          reject(searchError);
-        }
+    const ldapServerUrl = 'ldap://34.231.51.201:389/';
+    const adminDN = 'cn=admin,dc=deliverar,dc=com';
+    const adminPassword = 'admin';
 
-        const users = [];
+    const ldapClient = ldap.createClient({
+      url: ldapServerUrl,
+    });
 
-        searchResult.on("searchEntry", (entry) => {
-          users.push(entry.object);
-        });
+    ldapClient.bind(adminDN, adminPassword, (bindError) => {
+      if (bindError) {
+        console.error('Fallo al autenticarse en el servidor LDAP:', bindError);
+        reject(bindError);
+      } else {
+        const baseDN = 'ou=users,dc=deliverar,dc=com';
+        const searchOptions = {
+          scope: 'one',
+          filter: `(cn=${cn})`,
+        };
 
-        searchResult.on("end", () => {
-          resolve(users);
+        ldapClient.search(baseDN, searchOptions, (searchError, searchResponse) => {
+          if (searchError) {
+            console.error('Error en la búsqueda LDAP:', searchError);
+            reject(searchError);
+          }
+
+          const usuariosCN = [];
+
+          searchResponse.on('searchEntry', (entry) => {
+            const usuarioCN = entry.pojo;
+            usuariosCN.push(usuarioCN);
+          });
+
+          searchResponse.on('end', () => {
+            console.log('Búsqueda LDAP completada. Total de usuarios encontrados:', usuariosCN.length);
+            ldapClient.unbind();
+            resolve(usuariosCN);
+          });
         });
       }
-    );
+    });
   });
 }
-
 app.delete("/api/deleteUsers/:id", async (req, res) => {
   const userId = req.params.id;
 
@@ -1807,7 +1826,10 @@ app.get("/api/deepracer/notify", async (req, res) => {
             "38.126.090",
             "19.767.309",
           ];
-          const response = data_parsed.map((item, i) => ({ ...item, dni: dnis[i] }));
+          const response = data_parsed.map((item, i) => ({
+            ...item,
+            dni: dnis[i],
+          }));
 
           stompClient.publish({
             destination: "/app/send/admin-personal",
