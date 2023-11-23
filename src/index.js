@@ -1908,6 +1908,41 @@ app.post("/api/payment/pay", async (req, res) => {
 
 //Fin endpoint de pago
 
+app.get('/api/LoginQr', async (req, res) => {
+  const ldapServerUrl = 'ldap://34.231.51.201:389/';
+  const adminDN = 'cn=admin,dc=deliverar,dc=com';
+  const adminPassword = 'admin';
+
+  const ldapClient = ldap.createClient({
+    url: ldapServerUrl,
+  });
+
+  ldapClient.bind(adminDN, adminPassword, async (bindError) => {
+    if (bindError) {
+      console.error('Fallo al autenticarse en el servidor LDAP:', bindError);
+      res.status(500).send('Error al autenticarse en el servidor LDAP');
+      return;
+    }
+    const uid = req.query.uid;
+    // const pass = req.query.pass;
+    console.log(uid);
+    try {
+      const usuarioDN = await searchUsuariosPorUid(uid);
+      console.log('DN del usuario:', usuarioDN);
+      const bloqueado = await estaBloqueado(usuarioDN);
+      console.log("bloqueado??: ", bloqueado)
+      if (bloqueado === '1') {
+        return res.status(500).send('Usuario Bloqueado');
+      }
+      res.status(200).json({ status: "http://deliver.ar-frontend.s3-website-us-east-1.amazonaws.com/" })//res.status(200).send('ok');
+    } catch (searchError) {
+      console.error('Error en la búsqueda LDAP:', searchError);
+      res.status(500).send('No se encontró el usuario en e LDAP');
+    }
+  });
+});
+
+
 async function searchUsuariosPorCNN(cn) {
   return new Promise((resolve, reject) => {
     const ldapServerUrl = "ldap://34.231.51.201:389/";
