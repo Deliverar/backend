@@ -1785,25 +1785,43 @@ app.get("/api/deepracer/notify", async (req, res) => {
       // Un fragmento de datos ha sido recibido.
       httpRes.on("data", (chunk) => {
         data += chunk;
-        //Inicio Evento resultado de carrera
-        stompClient.publish({
-          destination: "/app/send/admin-personal",
-          body: JSON.stringify({
-            sender: "admin-personal",
-            created_at: new Date().getTime(),
-            event_name: "race_result",
-            data: {
-              data: data,
-            },
-          }),
-        });
-        //Fin Evento resultado de carrera
       });
 
       // La respuesta completa ha sido recibida. Procesar el resultado.
       httpRes.on("end", () => {
         try {
-          res.json(JSON.parse(data));
+          const data_parsed = JSON.parse(data);
+
+          //Inicio Evento resultado de carrera
+          const dnis = [
+            "16.234.777",
+            "32.323.555",
+            "33.487.333",
+            "33.476.765",
+            "35.876.999",
+            "26.446.321",
+            "16.555.316",
+            "38.888.123",
+            "31.123.987",
+            "23.666.001",
+            "38.126.090",
+            "19.767.309",
+          ];
+          const response = data_parsed.map((item, i) => ({ ...item, dni: dnis[i] }));
+
+          stompClient.publish({
+            destination: "/app/send/admin-personal",
+            body: JSON.stringify({
+              sender: "admin-personal",
+              created_at: new Date().getTime(),
+              event_name: "race_result",
+              data: {
+                data: response,
+              },
+            }),
+          });
+          //Fin Evento resultado de carrera
+          res.json(response);
         } catch (e) {
           console.error(`Error parsing JSON: ${e.message}`);
           res.status(500).send("Internal Server Error");
