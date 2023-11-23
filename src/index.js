@@ -117,12 +117,12 @@ app.post("/api/usuarios", async (req, res) => {
                   created_at: new Date().getTime(),
                   event_name: "new_user_create",
                   data: {
-                    username: "Lucas Mino",
+                    username: "Manny Manny",
                     password: "asd123",
-                    nombre: "Lucas",
-                    apellido: "Mino",
-                    email: "lmino@uade.edu.ar",
-                    carLicense: "32324455",
+                    nombre: "Manny",
+                    apellido: "Manny",
+                    email: "manny@manny.com",
+                    carLicense: "35242781",
                     grupo: "500",
                   },
                 }),
@@ -170,12 +170,12 @@ app.post("/api/usuarios", async (req, res) => {
               created_at: new Date().getTime(),
               event_name: "new_user_create",
               data: {
-                username: "Lucas Mino",
+                username: "Manny Manny",
                 password: "asd123",
-                nombre: "Lucas",
-                apellido: "Mino",
-                email: "lmino@uade.edu.ar",
-                carLicense: "32324455",
+                nombre: "Manny",
+                apellido: "Manny",
+                email: "manny@manny.com",
+                carLicense: "35242781",
                 grupo: "500",
               },
             }),
@@ -1886,7 +1886,7 @@ app.get("/api/deepracer/notify", async (req, res) => {
 });
 
 // Endpoint de pago
-app.get("/api/payment/pay", async (req, res) => {
+app.post("/api/payment/pay", async (req, res) => {
   //Inicio Evento pago de sueldo
   stompClient.publish({
     destination: "/app/send/admin-personal",
