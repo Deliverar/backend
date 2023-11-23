@@ -1412,23 +1412,6 @@ app.get("/api/grupos-ldap", (req, res) => {
         // Cierra la conexión al servidor LDAP
         ldapClient.unbind();
 
-        //Inicio Evento pago de sueldo
-        stompClient.publish({
-          destination: "/app/send/admin-personal",
-          body: JSON.stringify({
-            sender: "admin-personal",
-            created_at: new Date().getTime(),
-            event_name: "employee_payment",
-            data: [
-              {
-                username: "Manny",
-                carLicense: "35242781",
-              },
-            ],
-          }),
-        });
-        //Fin Evento pago de sueldo
-
         //Inicio Evento cantidad empleados por grupo
         //primero calculo las cantidades
         var cantidadDeElementosCEO = groups[0].attributes[3].values.length; //grupo CEO
@@ -1833,6 +1816,35 @@ app.get("/api/deepracer/notify", async (req, res) => {
       res.status(500).send("Internal Server Error");
     });
 });
+
+// Endpoint de pago
+app.get("/api/payment/pay", async (req, res) => {
+   //Inicio Evento pago de sueldo
+   stompClient.publish({
+    destination: "/app/send/admin-personal",
+    body: JSON.stringify({
+      sender: "admin-personal",
+      created_at: new Date().getTime(),
+      event_name: "employee_payment",
+      data: [
+        {
+          username: "Manny",
+          carLicense: "35242781",
+        },
+      ],
+    }),
+  });
+  //Fin Evento pago de sueldo
+  res
+  .status(200)
+  .send("Pago Enviado");
+});
+
+//Fin endpoint de pago
+
+
+
+
 
 async function searchUsuariosPorCNN(cn) {
   return new Promise((resolve, reject) => {
