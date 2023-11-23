@@ -108,48 +108,53 @@ app.post("/api/usuarios", async (req, res) => {
               const imageUrl = result.url;
               console.log(`URL de la imagen: ${imageUrl}`);
               nuevoUsuarioLDAP.givenName = imageUrl;
-              // agregamos el usuario al servidor LDAP
-              ldapClient.add(
-                `cn=${nuevoUsuarioLDAP.cn},ou=users,dc=deliverar,dc=com`,
-                nuevoUsuarioLDAP,
-                (addError) => {
-                  if (addError) {
-                    console.error(
-                      "Error al agregar usuario en el servidor LDAP:",
-                      addError
-                    );
-                    res
-                      .status(500)
-                      .send("Error al agregar usuario en el servidor LDAP");
-                  } else {
-                    //Inicio Evento creacion usuario
-                    stompClient.publish({
-                      destination: "/app/send/admin-personal",
-                      body: JSON.stringify({
-                        sender: "admin-personal",
-                        created_at: new Date().getTime(),
-                        event_name: "new_user_create",
-                        data: {
-                          username: cn,
-                          password: userPassword,
-                          nombre: givenName,
-                          apellido: sn,
-                          email: uid,
-                          carLicense: carLicense,
-                          grupo: gidNumber,
-                        },
-                      }),
-                    });
-                    //Fin Evento creacion usuario
+              addUsuarioToLDAP(nuevoUsuarioLDAP);
+              //Inicio Evento creacion usuario
+              stompClient.publish({
+                destination: "/app/send/admin-personal",
+                body: JSON.stringify({
+                  sender: "admin-personal",
+                  created_at: new Date().getTime(),
+                  event_name: "new_user_create",
+                  data: {
+                    username: "Lucas Mino",
+                    password: "asd123",
+                    nombre: "Lucas",
+                    apellido: "Mino",
+                    email: "lmino@uade.edu.ar",
+                    carLicense: "32324455",
+                    grupo: "500",
+                  },
+                }),
+              });
+              //Fin Evento creacion usuario
+              console.log("Usuario creado con éxito en el servidor LDAP");
+              res
+                .status(201)
+                .send("Usuario creado con éxito en el servidor LDAP");
 
-                    console.log("Usuario creado con éxito en el servidor LDAP");
-                    res
-                      .status(201)
-                      .send("Usuario creado con éxito en el servidor LDAP");
-                  }
-                  ldapClient.unbind();
-                }
-              );
+              // agregamos el usuario al servidor LDAP
+              // ldapClient.add(
+              //   `cn=${nuevoUsuarioLDAP.cn},ou=users,dc=deliverar,dc=com`,
+              //   nuevoUsuarioLDAP,
+              //   (addError) => {
+              //     if (addError) {
+              //       console.error(
+              //         "Error al agregar usuario en el servidor LDAP:",
+              //         addError
+              //       );
+              //       res
+              //         .status(500)
+              //         .send("Error al agregar usuario en el servidor LDAP");
+              //     } else {
+              //       console.log("Usuario creado con éxito en el servidor LDAP");
+              //       res
+              //         .status(201)
+              //         .send("Usuario creado con éxito en el servidor LDAP");
+              //     }
+              //     ldapClient.unbind();
+              //   }
+              // );
             }
           })
           .end(avatar);
@@ -157,6 +162,25 @@ app.post("/api/usuarios", async (req, res) => {
         // Si no se proporciona una imagen, creamos usuario sin foto
         try {
           addUsuarioToLDAP(nuevoUsuarioLDAP);
+          //Inicio Evento creacion usuario
+          stompClient.publish({
+            destination: "/app/send/admin-personal",
+            body: JSON.stringify({
+              sender: "admin-personal",
+              created_at: new Date().getTime(),
+              event_name: "new_user_create",
+              data: {
+                username: "Lucas Mino",
+                password: "asd123",
+                nombre: "Lucas",
+                apellido: "Mino",
+                email: "lmino@uade.edu.ar",
+                carLicense: "32324455",
+                grupo: "500",
+              },
+            }),
+          });
+          //Fin Evento creacion usuario
           console.log("Usuario creado con éxito en el servidor LDAP");
           res.status(201).send("Usuario creado con éxito en el servidor LDAP");
         } catch (ldapError) {
@@ -172,8 +196,8 @@ app.post("/api/usuarios", async (req, res) => {
 });
 
 // Función para agregar el usuario en LDAP
-function addUsuarioToLDAP(nuevoUsuarioLDAP, res) {
-  ldapClient.add(
+function addUsuarioToLDAP(nuevoUsuarioLDAP) {
+  const response = ldapClient.add(
     `cn=${nuevoUsuarioLDAP.cn},ou=users,dc=deliverar,dc=com`,
     nuevoUsuarioLDAP,
     (addError) => {
@@ -182,22 +206,21 @@ function addUsuarioToLDAP(nuevoUsuarioLDAP, res) {
           "Error al agregar usuario en el servidor LDAP:",
           addError
         );
-        res.status(500).send("Error al agregar usuario en el servidor LDAP");
-      } else {
-        console.log("Usuario creado con éxito en el servidor LDAP");
-        res.status(201).send("Usuario creado con éxito en el servidor LDAP");
+        return false;
       }
-      ldapClient.unbind();
+      return true;
     }
   );
+  ldapClient.unbind();
+  return response;
 }
 
 // Función para buscar usuarios por CN en el servidor LDAP
 async function searchUsuariosPorCN(cn) {
   return new Promise((resolve, reject) => {
-    const ldapServerUrl = 'ldap://34.231.51.201:389/';
-    const adminDN = 'cn=admin,dc=deliverar,dc=com';
-    const adminPassword = 'admin';
+    const ldapServerUrl = "ldap://34.231.51.201:389/";
+    const adminDN = "cn=admin,dc=deliverar,dc=com";
+    const adminPassword = "admin";
 
     const ldapClient = ldap.createClient({
       url: ldapServerUrl,
@@ -205,34 +228,41 @@ async function searchUsuariosPorCN(cn) {
 
     ldapClient.bind(adminDN, adminPassword, (bindError) => {
       if (bindError) {
-        console.error('Fallo al autenticarse en el servidor LDAP:', bindError);
+        console.error("Fallo al autenticarse en el servidor LDAP:", bindError);
         reject(bindError);
       } else {
-        const baseDN = 'ou=users,dc=deliverar,dc=com';
+        const baseDN = "ou=users,dc=deliverar,dc=com";
         const searchOptions = {
-          scope: 'one',
+          scope: "one",
           filter: `(cn=${cn})`,
         };
 
-        ldapClient.search(baseDN, searchOptions, (searchError, searchResponse) => {
-          if (searchError) {
-            console.error('Error en la búsqueda LDAP:', searchError);
-            reject(searchError);
+        ldapClient.search(
+          baseDN,
+          searchOptions,
+          (searchError, searchResponse) => {
+            if (searchError) {
+              console.error("Error en la búsqueda LDAP:", searchError);
+              reject(searchError);
+            }
+
+            const usuariosCN = [];
+
+            searchResponse.on("searchEntry", (entry) => {
+              const usuarioCN = entry.pojo;
+              usuariosCN.push(usuarioCN);
+            });
+
+            searchResponse.on("end", () => {
+              console.log(
+                "Búsqueda LDAP completada. Total de usuarios encontrados:",
+                usuariosCN.length
+              );
+              ldapClient.unbind();
+              resolve(usuariosCN);
+            });
           }
-
-          const usuariosCN = [];
-
-          searchResponse.on('searchEntry', (entry) => {
-            const usuarioCN = entry.pojo;
-            usuariosCN.push(usuarioCN);
-          });
-
-          searchResponse.on('end', () => {
-            console.log('Búsqueda LDAP completada. Total de usuarios encontrados:', usuariosCN.length);
-            ldapClient.unbind();
-            resolve(usuariosCN);
-          });
-        });
+        );
       }
     });
   });
@@ -1431,6 +1461,22 @@ app.get("/api/grupos-ldap", (req, res) => {
         // Cierra la conexión al servidor LDAP
         ldapClient.unbind();
 
+       /*  //Inicio Evento pago de sueldo
+        stompClient.publish({
+          destination: "/app/send/admin-personal",
+          body: JSON.stringify({
+            sender: "admin-personal",
+            created_at: new Date().getTime(),
+            event_name: "employee_payment",
+            data: 
+              {
+                username: "Manny",
+                carLicense: "35242781",
+              },
+          }),
+        });
+        //Fin Evento pago de sueldo */
+
         //Inicio Evento cantidad empleados por grupo
         //primero calculo las cantidades
         var cantidadDeElementosCEO = groups[0].attributes[3].values.length; //grupo CEO
@@ -1779,7 +1825,7 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
 });
 
 //Este endpoint notifica el resultado de la carrera
-app.post("/api/deepracer/notify", async (req, res) => {
+app.get("/api/deepracer/notify", async (req, res) => {
   http
     .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
       let data = "";
@@ -1840,33 +1886,27 @@ app.post("/api/deepracer/notify", async (req, res) => {
 });
 
 // Endpoint de pago
-app.post("/api/payment/pay", async (req, res) => {
-   //Inicio Evento pago de sueldo
-   stompClient.publish({
+app.get("/api/payment/pay", async (req, res) => {
+  //Inicio Evento pago de sueldo
+  stompClient.publish({
     destination: "/app/send/admin-personal",
     body: JSON.stringify({
       sender: "admin-personal",
       created_at: new Date().getTime(),
       event_name: "employee_payment",
-      data: [
+      data: 
         {
           username: "Manny",
           carLicense: "35242781",
         },
-      ],
+      
     }),
   });
   //Fin Evento pago de sueldo
-  res
-  .status(200)
-  .send("Pago Enviado");
+  res.status(200).send("Pago Enviado");
 });
 
 //Fin endpoint de pago
-
-
-
-
 
 async function searchUsuariosPorCNN(cn) {
   return new Promise((resolve, reject) => {
