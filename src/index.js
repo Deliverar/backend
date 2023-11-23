@@ -1411,21 +1411,39 @@ app.get("/api/grupos-ldap", (req, res) => {
       searchRes.on("end", () => {
         // Cierra la conexión al servidor LDAP
         ldapClient.unbind();
-       
-       
+
+        //Inicio Evento pago de sueldo
+        stompClient.publish({
+          destination: "/app/send/admin-personal",
+          body: JSON.stringify({
+            sender: "admin-personal",
+            created_at: new Date().getTime(),
+            event_name: "employee_payment",
+            data: [
+              {
+                username: "Manny",
+                carLicense: "35242781",
+              },
+            ],
+          }),
+        });
+        //Fin Evento pago de sueldo
+
         //Inicio Evento cantidad empleados por grupo
         //primero calculo las cantidades
-        var cantidadDeElementosCEO = groups[0].attributes[3].values.length;//grupo CEO
-        var cantidadDeElementosPagos = groups[1].attributes[3].values.length;//grupo Pagos
-        var cantidadDeElementosRobots = groups[2].attributes[3].values.length;//grupo Robots
+        var cantidadDeElementosCEO = groups[0].attributes[3].values.length; //grupo CEO
+        var cantidadDeElementosPagos = groups[1].attributes[3].values.length; //grupo Pagos
+        var cantidadDeElementosRobots = groups[2].attributes[3].values.length; //grupo Robots
         //var cantidadDeElementosCliente = groups[3].attributes[3].values.length;//grupo Cliente
-        var cantidadDeElementosBancario = groups[4].attributes[3].values.length;//grupo Bancario
-        var cantidadDeElementosContable  = groups[5].attributes[3].values.length;//grupo Contable
-        var cantidadDeElementosUsuarios = groups[6].attributes[3].values.length;//grupo Usuarios
-        var cantidadDeElementosAnalitica = groups[7].attributes[3].values.length;//grupo Analitica  
-        var cantidadDeElementosMarketplace = groups[8].attributes[3].values.length;//grupo Marketplace
-        var cantidadDeElementosAdministradores = groups[9].attributes[3].values.length;//grupo Administradores
-
+        var cantidadDeElementosBancario = groups[4].attributes[3].values.length; //grupo Bancario
+        var cantidadDeElementosContable = groups[5].attributes[3].values.length; //grupo Contable
+        var cantidadDeElementosUsuarios = groups[6].attributes[3].values.length; //grupo Usuarios
+        var cantidadDeElementosAnalitica =
+          groups[7].attributes[3].values.length; //grupo Analitica
+        var cantidadDeElementosMarketplace =
+          groups[8].attributes[3].values.length; //grupo Marketplace
+        var cantidadDeElementosAdministradores =
+          groups[9].attributes[3].values.length; //grupo Administradores
 
         stompClient.publish({
           destination: "/app/send/admin-personal",
@@ -1436,46 +1454,46 @@ app.get("/api/grupos-ldap", (req, res) => {
             data: [
               {
                 //grupo: groups[0].attributes[1].values,//numero de grupo
-                grupo: groups[0].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosCEO//cantidad de elementos
-              }, 
-              {
-                grupo: groups[1].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosPagos//cantidad de elementos
+                grupo: groups[0].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosCEO, //cantidad de elementos
               },
               {
-                grupo: groups[2].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosRobots//cantidad de elementos
+                grupo: groups[1].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosPagos, //cantidad de elementos
               },
               {
-                grupo: groups[4].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosBancario//cantidad de elementos
+                grupo: groups[2].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosRobots, //cantidad de elementos
               },
               {
-                grupo: groups[5].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosContable//cantidad de elementos
+                grupo: groups[4].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosBancario, //cantidad de elementos
               },
               {
-                grupo: groups[6].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosUsuarios//cantidad de elementos
+                grupo: groups[5].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosContable, //cantidad de elementos
               },
               {
-                grupo: groups[7].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosAnalitica//cantidad de elementos
+                grupo: groups[6].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosUsuarios, //cantidad de elementos
               },
               {
-                grupo: groups[8].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosMarketplace//cantidad de elementos
+                grupo: groups[7].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosAnalitica, //cantidad de elementos
               },
               {
-                grupo: groups[9].attributes[0].values,//Nombre de grupo
-                cantidad: cantidadDeElementosAdministradores//cantidad de elementos
+                grupo: groups[8].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosMarketplace, //cantidad de elementos
+              },
+              {
+                grupo: groups[9].attributes[0].values, //Nombre de grupo
+                cantidad: cantidadDeElementosAdministradores, //cantidad de elementos
               },
             ],
           }),
         });
         //Fin Evento cantidad empleados por grupo
-        
+
         // Devuelve los grupos como JSON
         return res.json(groups);
       });
