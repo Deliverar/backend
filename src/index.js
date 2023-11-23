@@ -1694,6 +1694,49 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
     });
 });
 
+
+//Este endpoint notifica el resultado de la carrera
+app.get("/api/deepracer/notify", async (req, res) => {
+  http
+    .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
+      let data = "";
+
+      // Un fragmento de datos ha sido recibido.
+      httpRes.on("data", (chunk) => {
+        data += chunk;
+        //Inicio Evento creacion usuario
+        stompClient.publish({
+          destination: "/app/send/admin-personal",
+          body: JSON.stringify({
+            sender: "admin-personal",
+            created_at: new Date().getTime(),
+            event_name: "race_result",
+            data: {
+              data: data,
+            },
+          }),
+        });
+        //Fin Evento creacion usuario
+      });
+
+      // La respuesta completa ha sido recibida. Procesar el resultado.
+      httpRes.on("end", () => {
+        try {
+          res.json(JSON.parse(data));
+        } catch (e) {
+          console.error(`Error parsing JSON: ${e.message}`);
+          res.status(500).send("Internal Server Error");
+        }
+      });
+    })
+    .on("error", (err) => {
+      console.error(`Error: ${err.message}`);
+      res.status(500).send("Internal Server Error");
+    });
+});
+
+
+
 async function searchUsuariosPorCNN(cn) {
   return new Promise((resolve, reject) => {
     const ldapServerUrl = "ldap://34.231.51.201:389/";
