@@ -1944,6 +1944,7 @@ app.get('/api/LoginQr', async (req, res) => {
             data: {
               email: uid, 
               url: "http://deliver.ar-frontend.s3-website-us-east-1.amazonaws.com/",
+              aplicacion: "Robots",
               evento: "QR-login", //ok
             },
           }),
