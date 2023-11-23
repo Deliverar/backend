@@ -82,3 +82,478 @@ Emitted 'error' event on Client instance at:
 }
 
 Node.js v18.18.2
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
+Error de autenticación: LDAPError [InvalidCredentialsError]: Invalid Credentials
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Invalid Credentials',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read properties of null (reading 'send')
+    at process.killkid (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (node:events:517:28)
+    at process.exit (node:internal/process/per_thread:192:15)
+    at monitor (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (node:events:517:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:292:12)
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1861:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error de autenticación: LDAPError [UnwillingToPerformError]: Unwilling To Perform
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Unwilling To Perform',
+  lde_dn: null
+}
+Error de autenticación: LDAPError [UnwillingToPerformError]: Unwilling To Perform
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Unwilling To Perform',
+  lde_dn: null
+}
+Error de autenticación: LDAPError [UnwillingToPerformError]: Unwilling To Perform
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Unwilling To Perform',
+  lde_dn: null
+}
+Error de autenticación: LDAPError [InvalidCredentialsError]: Invalid Credentials
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Invalid Credentials',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\src\index.js:97
+                username: cn,
+                          ^
+
+ReferenceError: cn is not defined
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:97:27
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:392:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+PayloadTooLargeError: request entity too large
+    at readStream (C:\Users\Administrator\Proyectos\backend\node_modules\raw-body\index.js:156:17)
+    at getRawBody (C:\Users\Administrator\Proyectos\backend\node_modules\raw-body\index.js:109:12)
+    at read (C:\Users\Administrator\Proyectos\backend\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (C:\Users\Administrator\Proyectos\backend\node_modules\body-parser\lib\types\json.js:135:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\Users\Administrator\Proyectos\backend\node_modules\cors\lib\index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (C:\Users\Administrator\Proyectos\backend\node_modules\raw-body\index.js:156:17)
+    at getRawBody (C:\Users\Administrator\Proyectos\backend\node_modules\raw-body\index.js:109:12)
+    at read (C:\Users\Administrator\Proyectos\backend\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (C:\Users\Administrator\Proyectos\backend\node_modules\body-parser\lib\types\json.js:135:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\Users\Administrator\Proyectos\backend\node_modules\cors\lib\index.js:188:7)

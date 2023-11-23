@@ -515,7 +515,7 @@ app.get("/api/LoginUidApp", async (req, res) => {
         console.log("Autenticación exitosa");
         blanquearContador(usuarioDN);
         ldapClient.unbind();
-        res.status(200).send("ok");
+        return res.status(200).json({ status: "ok" });//res.status(200).send("ok");
       });
     } catch (searchError) {
       console.error("Error en la búsqueda LDAP:", searchError);
@@ -618,7 +618,7 @@ app.get("/api/Login", (req, res) => {
       }
       console.log("Autenticación exitosa");
       ldapClient.unbind();
-      res.status(200).send("ok");
+      return res.status(200).json({ status: "ok" });//res.status(200).send("ok");
     });
   });
 });

@@ -33,3 +33,861 @@ Escuchando en puerto 80...
 Escuchando en puerto 80...
 Escuchando en puerto 80...
 Escuchando en puerto 80...
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Escuchando en puerto 80...
+Escuchando en puerto 80...
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+PASO 1
+Valor de "st":  0
+St nuevo: 01
+VALOR DE NEWST:  01
+Se actualizó el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+undefined
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: undefined
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+undefined
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: undefined
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+undefined
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: undefined
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+fferreyralima@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: fferreyralima@uade.edu.ar
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+apissani@uade.edu.ar
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+apissani@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Escuchando en puerto 80...
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+erusso@uade.edu.ar&pass=asd123
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: erusso@uade.edu.ar&pass=asd123
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1822:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+PASO 1
+Valor de "st":  0
+St nuevo: 01
+VALOR DE NEWST:  01
+Se actualizó el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+PASO 1
+Valor de "st":  01
+St nuevo: 011
+VALOR DE NEWST:  011
+Se actualizó el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+PASO 1
+Valor de "st":  011
+St nuevo: 0111
+VALOR DE NEWST:  0111
+PASO 3
+bloqueo:  1
+PASO 4
+Se actualizó el contador
+Se  bloqueó el usuario
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  1
+bloqueado??:  1
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  1
+bloqueado??:  1
+Escuchando en puerto 80...
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+apissani@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+PASO 1
+Valor de "st":  0
+St nuevo: 01
+VALOR DE NEWST:  01
+Se actualizó el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Búsqueda LDAP completada. Total de usuarios encontrados: 51
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 0
+Conexión exitosa al servidor LDAP sin SSL
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
