@@ -3662,3 +3662,603 @@ version:1.2
 content-length:0
 
 
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+manny@manny.com
+Búsqueda LDAP completada
+DN del usuario: cn=Manny,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:210
+
+
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+Búsqueda LDAP completada. Total de usuarios encontrados: 68
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+billgates@deliver.ar
+DN del usuario: cn=Bill,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:140
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Búsqueda LDAP completada. Total de usuarios encontrados: 68
+Búsqueda LDAP completada. Total de usuarios encontrados: 68
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+apissani@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+apissani@uade.edu.ar
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:140
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+apissani@uade.edu.ar
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:140
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+apissani@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+Búsqueda LDAP completada. Total de usuarios encontrados: 0
+Usuarios encontrados: []
+Conexión exitosa al servidor LDAP sin SSL
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:239
+
+
+Usuario creado con éxito en el servidor LDAP
+admin@admin
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: admin@admin
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:2181:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+admin@admin
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: admin@admin
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:2181:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+Búsqueda LDAP completada. Total de usuarios encontrados: 0
+Usuarios encontrados: []
+Conexión exitosa al servidor LDAP sin SSL
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:239
+
+
+Usuario creado con éxito en el servidor LDAP
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
+erusso@uade.edu.ar
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+admin@admin
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: admin@admin
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:2181:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+Búsqueda LDAP completada. Total de usuarios encontrados: 0
+Usuarios encontrados: []
+Conexión exitosa al servidor LDAP sin SSL
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:239
+
+
+Usuario creado con éxito en el servidor LDAP
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+apissani@uade.edu.ar
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:140
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+admin@admin
+Búsqueda LDAP completada
+DN del usuario: Error: No se encontró un usuario con el UID: admin@admin
+    at CorkedEmitter.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:2181:19)
+    at CorkedEmitter.emit (node:events:517:28)
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+Búsqueda LDAP completada. Total de usuarios encontrados: 1
+manny@manny.com
+DN del usuario: cn=Mann,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+PASO 1
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+manny@manny.com
+DN del usuario: cn=Mann,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+PASO 1
+Escuchando en puerto 80...
+STOMP: Opening Web Socket...
+STOMP: Web Socket Opened...
+STOMP: >>> CONNECT
+accept-version:1.2,1.1,1.0
+heart-beat:10000,10000
+
+
+STOMP: Received data
+STOMP: <<< CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+STOMP: connected to server undefined
+Conexión STOMP abierta: CONNECTED
+heart-beat:0,0
+version:1.2
+content-length:0
+
+
+erusso@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Ezequiel Russo,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+Valor de "l":  0
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:138
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+manny@manny.com
+DN del usuario: cn=Mann,ou=users,dc=deliverar,dc=com
+Búsqueda LDAP completada
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:210
+
+
+apissani@uade.edu.ar
+Búsqueda LDAP completada
+DN del usuario: cn=Alejandra,ou=users,dc=deliverar,dc=com
+PASO 1 de busqueda del l
+bloqueado??:  null
+STOMP: >>> SEND
+destination:/app/send/admin-personal
+content-length:140
+
+
+Autenticación exitosa
+St nuevo: 0
+Se reinició el contador
+STOMP: Connection closed to ws://intappscore.azurewebsites.net/admin-personal
+STOMP: STOMP: scheduling reconnection in 5000ms
+STOMP: Opening Web Socket...
