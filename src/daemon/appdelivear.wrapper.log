@@ -352,3 +352,245 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
    at winsw.WrapperService.OnShutdown()
 2023-11-23 03:22:40 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2023-11-23 03:22:40 - Started 3832
+2023-11-23 03:32:29 - Stopping appdelivear.exe
+2023-11-23 03:32:29 - ProcessKill 3832
+2023-11-23 03:32:29 - Found child process: 3852 Name: conhost.exe
+2023-11-23 03:32:29 - Found child process: 4164 Name: node.exe
+2023-11-23 03:32:29 - Stopping process 3852
+2023-11-23 03:32:29 - Send SIGINT 3852
+2023-11-23 03:32:29 - SIGINT to 3852 failed - Killing as fallback
+2023-11-23 03:32:29 - Stopping process 4164
+2023-11-23 03:32:29 - Send SIGINT 4164
+2023-11-23 03:32:29 - SIGINT to 4164 failed - Killing as fallback
+2023-11-23 03:32:29 - Stopping process 3832
+2023-11-23 03:32:29 - Send SIGINT 3832
+2023-11-23 03:32:29 - SIGINT to 3832 failed - Killing as fallback
+2023-11-23 03:32:29 - Finished appdelivear.exe
+2023-11-23 03:32:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 03:32:30 - Started 5280
+2023-11-23 03:57:05 - Stopping appdelivear.exe
+2023-11-23 03:57:05 - ProcessKill 5280
+2023-11-23 03:57:05 - Found child process: 6624 Name: conhost.exe
+2023-11-23 03:57:05 - Found child process: 6940 Name: node.exe
+2023-11-23 03:57:05 - Stopping process 6624
+2023-11-23 03:57:05 - Send SIGINT 6624
+2023-11-23 03:57:05 - SIGINT to 6624 failed - Killing as fallback
+2023-11-23 03:57:05 - Stopping process 6940
+2023-11-23 03:57:05 - Send SIGINT 6940
+2023-11-23 03:57:05 - SIGINT to 6940 failed - Killing as fallback
+2023-11-23 03:57:05 - Stopping process 5280
+2023-11-23 03:57:05 - Send SIGINT 5280
+2023-11-23 03:57:05 - SIGINT to 5280 failed - Killing as fallback
+2023-11-23 03:57:05 - Finished appdelivear.exe
+2023-11-23 03:57:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 03:57:06 - Started 5268
+2023-11-23 05:14:17 - Stopping appdelivear.exe
+2023-11-23 05:14:17 - ProcessKill 5268
+2023-11-23 05:14:17 - Found child process: 948 Name: conhost.exe
+2023-11-23 05:14:17 - Found child process: 5536 Name: node.exe
+2023-11-23 05:14:17 - Stopping process 948
+2023-11-23 05:14:17 - Send SIGINT 948
+2023-11-23 05:14:17 - SIGINT to 948 failed - Killing as fallback
+2023-11-23 05:14:17 - Stopping process 5536
+2023-11-23 05:14:17 - Send SIGINT 5536
+2023-11-23 05:14:17 - SIGINT to 5536 failed - Killing as fallback
+2023-11-23 05:14:17 - Stopping process 5268
+2023-11-23 05:14:17 - Send SIGINT 5268
+2023-11-23 05:14:17 - SIGINT to 5268 failed - Killing as fallback
+2023-11-23 05:14:17 - Finished appdelivear.exe
+2023-11-23 05:14:19 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 05:14:19 - Started 6816
+2023-11-23 05:20:45 - Stopping appdelivear.exe
+2023-11-23 05:20:45 - ProcessKill 6816
+2023-11-23 05:20:45 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-23 14:09:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 14:09:53 - Started 3844
+2023-11-23 15:43:09 - Stopping appdelivear.exe
+2023-11-23 15:43:09 - ProcessKill 3844
+2023-11-23 15:43:09 - Found child process: 3852 Name: conhost.exe
+2023-11-23 15:43:09 - Found child process: 1420 Name: node.exe
+2023-11-23 15:43:09 - Stopping process 3852
+2023-11-23 15:43:09 - Send SIGINT 3852
+2023-11-23 15:43:09 - SIGINT to 3852 failed - Killing as fallback
+2023-11-23 15:43:09 - Stopping process 1420
+2023-11-23 15:43:09 - Send SIGINT 1420
+2023-11-23 15:43:09 - SIGINT to 1420 failed - Killing as fallback
+2023-11-23 15:43:09 - Stopping process 3844
+2023-11-23 15:43:09 - Send SIGINT 3844
+2023-11-23 15:43:09 - SIGINT to 3844 failed - Killing as fallback
+2023-11-23 15:43:09 - Finished appdelivear.exe
+2023-11-23 15:43:10 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 15:43:10 - Started 7020
+2023-11-23 15:45:32 - Stopping appdelivear.exe
+2023-11-23 15:45:32 - ProcessKill 7020
+2023-11-23 15:45:32 - Found child process: 5976 Name: conhost.exe
+2023-11-23 15:45:32 - Found child process: 5916 Name: node.exe
+2023-11-23 15:45:32 - Stopping process 5976
+2023-11-23 15:45:32 - Send SIGINT 5976
+2023-11-23 15:45:32 - SIGINT to 5976 failed - Killing as fallback
+2023-11-23 15:45:32 - Stopping process 5916
+2023-11-23 15:45:32 - Send SIGINT 5916
+2023-11-23 15:45:32 - SIGINT to 5916 failed - Killing as fallback
+2023-11-23 15:45:32 - Stopping process 7020
+2023-11-23 15:45:32 - Send SIGINT 7020
+2023-11-23 15:45:32 - SIGINT to 7020 failed - Killing as fallback
+2023-11-23 15:45:32 - Finished appdelivear.exe
+2023-11-23 15:45:33 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 15:45:33 - Started 3884
+2023-11-23 16:07:59 - Stopping appdelivear.exe
+2023-11-23 16:07:59 - ProcessKill 3884
+2023-11-23 16:07:59 - Found child process: 2220 Name: conhost.exe
+2023-11-23 16:07:59 - Found child process: 4436 Name: node.exe
+2023-11-23 16:07:59 - Stopping process 2220
+2023-11-23 16:07:59 - Send SIGINT 2220
+2023-11-23 16:07:59 - SIGINT to 2220 failed - Killing as fallback
+2023-11-23 16:07:59 - Stopping process 4436
+2023-11-23 16:07:59 - Send SIGINT 4436
+2023-11-23 16:07:59 - SIGINT to 4436 failed - Killing as fallback
+2023-11-23 16:07:59 - Stopping process 3884
+2023-11-23 16:07:59 - Send SIGINT 3884
+2023-11-23 16:07:59 - SIGINT to 3884 failed - Killing as fallback
+2023-11-23 16:07:59 - Finished appdelivear.exe
+2023-11-23 16:08:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 16:08:00 - Started 1860
+2023-11-23 16:22:26 - Stopping appdelivear.exe
+2023-11-23 16:22:26 - ProcessKill 1860
+2023-11-23 16:22:26 - Found child process: 5000 Name: conhost.exe
+2023-11-23 16:22:26 - Found child process: 5124 Name: node.exe
+2023-11-23 16:22:26 - Stopping process 5000
+2023-11-23 16:22:26 - Send SIGINT 5000
+2023-11-23 16:22:26 - SIGINT to 5000 failed - Killing as fallback
+2023-11-23 16:22:26 - Stopping process 5124
+2023-11-23 16:22:26 - Send SIGINT 5124
+2023-11-23 16:22:26 - SIGINT to 5124 failed - Killing as fallback
+2023-11-23 16:22:26 - Stopping process 1860
+2023-11-23 16:22:26 - Send SIGINT 1860
+2023-11-23 16:22:26 - SIGINT to 1860 failed - Killing as fallback
+2023-11-23 16:22:26 - Finished appdelivear.exe
+2023-11-23 16:22:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 16:22:27 - Started 3492
+2023-11-23 18:22:58 - Stopping appdelivear.exe
+2023-11-23 18:22:58 - ProcessKill 3492
+2023-11-23 18:22:58 - Found child process: 4648 Name: conhost.exe
+2023-11-23 18:22:58 - Found child process: 6884 Name: node.exe
+2023-11-23 18:22:58 - Stopping process 4648
+2023-11-23 18:22:58 - Send SIGINT 4648
+2023-11-23 18:22:58 - SIGINT to 4648 failed - Killing as fallback
+2023-11-23 18:22:58 - Stopping process 6884
+2023-11-23 18:22:58 - Send SIGINT 6884
+2023-11-23 18:22:58 - SIGINT to 6884 failed - Killing as fallback
+2023-11-23 18:22:58 - Stopping process 3492
+2023-11-23 18:22:58 - Send SIGINT 3492
+2023-11-23 18:22:58 - SIGINT to 3492 failed - Killing as fallback
+2023-11-23 18:22:58 - Finished appdelivear.exe
+2023-11-23 18:22:59 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 18:22:59 - Started 6532
+2023-11-23 19:20:57 - Stopping appdelivear.exe
+2023-11-23 19:20:57 - ProcessKill 6532
+2023-11-23 19:20:57 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-23 19:24:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 19:24:11 - Started 3900
+2023-11-23 19:25:19 - Stopping appdelivear.exe
+2023-11-23 19:25:19 - ProcessKill 3900
+2023-11-23 19:25:19 - Found child process: 3908 Name: conhost.exe
+2023-11-23 19:25:19 - Found child process: 4172 Name: node.exe
+2023-11-23 19:25:19 - Stopping process 3908
+2023-11-23 19:25:19 - Send SIGINT 3908
+2023-11-23 19:25:19 - SIGINT to 3908 failed - Killing as fallback
+2023-11-23 19:25:19 - Stopping process 4172
+2023-11-23 19:25:19 - Send SIGINT 4172
+2023-11-23 19:25:19 - SIGINT to 4172 failed - Killing as fallback
+2023-11-23 19:25:19 - Stopping process 3900
+2023-11-23 19:25:19 - Send SIGINT 3900
+2023-11-23 19:25:19 - SIGINT to 3900 failed - Killing as fallback
+2023-11-23 19:25:19 - Finished appdelivear.exe
+2023-11-23 19:25:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 19:25:20 - Started 8140
+2023-11-23 22:57:14 - Stopping appdelivear.exe
+2023-11-23 22:57:14 - ProcessKill 8140
+2023-11-23 22:57:14 - Found child process: 2196 Name: conhost.exe
+2023-11-23 22:57:14 - Found child process: 1396 Name: node.exe
+2023-11-23 22:57:14 - Stopping process 2196
+2023-11-23 22:57:14 - Send SIGINT 2196
+2023-11-23 22:57:14 - SIGINT to 2196 failed - Killing as fallback
+2023-11-23 22:57:14 - Stopping process 1396
+2023-11-23 22:57:14 - Send SIGINT 1396
+2023-11-23 22:57:14 - SIGINT to 1396 failed - Killing as fallback
+2023-11-23 22:57:14 - Stopping process 8140
+2023-11-23 22:57:14 - Send SIGINT 8140
+2023-11-23 22:57:14 - SIGINT to 8140 failed - Killing as fallback
+2023-11-23 22:57:14 - Finished appdelivear.exe
+2023-11-23 22:57:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 22:57:15 - Started 4588
+2023-11-23 23:07:23 - Stopping appdelivear.exe
+2023-11-23 23:07:23 - ProcessKill 4588
+2023-11-23 23:07:24 - Found child process: 3500 Name: conhost.exe
+2023-11-23 23:07:24 - Found child process: 32 Name: node.exe
+2023-11-23 23:07:24 - Stopping process 3500
+2023-11-23 23:07:24 - Send SIGINT 3500
+2023-11-23 23:07:24 - SIGINT to 3500 failed - Killing as fallback
+2023-11-23 23:07:24 - Stopping process 32
+2023-11-23 23:07:24 - Send SIGINT 32
+2023-11-23 23:07:24 - SIGINT to 32 failed - Killing as fallback
+2023-11-23 23:07:24 - Stopping process 4588
+2023-11-23 23:07:24 - Send SIGINT 4588
+2023-11-23 23:07:24 - SIGINT to 4588 failed - Killing as fallback
+2023-11-23 23:07:24 - Finished appdelivear.exe
+2023-11-23 23:07:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 23:07:25 - Started 4972
+2023-11-23 23:17:51 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 23:17:51 - Started 7120
+2023-11-23 23:21:32 - Stopping appdelivear.exe
+2023-11-23 23:21:32 - ProcessKill 7120
+2023-11-23 23:21:33 - Shutdown exception
+Message:A system shutdown is in progress.
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-11-23 23:39:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 23:39:16 - Started 3860
+2023-11-23 23:40:19 - Stopping appdelivear.exe
+2023-11-23 23:40:19 - ProcessKill 3860
+2023-11-23 23:40:19 - Found child process: 3868 Name: conhost.exe
+2023-11-23 23:40:19 - Found child process: 5044 Name: node.exe
+2023-11-23 23:40:19 - Stopping process 3868
+2023-11-23 23:40:19 - Send SIGINT 3868
+2023-11-23 23:40:19 - SIGINT to 3868 failed - Killing as fallback
+2023-11-23 23:40:19 - Stopping process 5044
+2023-11-23 23:40:19 - Send SIGINT 5044
+2023-11-23 23:40:19 - SIGINT to 5044 failed - Killing as fallback
+2023-11-23 23:40:19 - Stopping process 3860
+2023-11-23 23:40:19 - Send SIGINT 3860
+2023-11-23 23:40:19 - SIGINT to 3860 failed - Killing as fallback
+2023-11-23 23:40:19 - Finished appdelivear.exe
+2023-11-23 23:40:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-23 23:40:20 - Started 2256

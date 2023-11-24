@@ -118,7 +118,7 @@ app.post("/api/usuarios", async (req, res) => {
                   event_name: "new_user_create",
                   data: {
                     username: "Manny Manny",
-                    password: "asd123",
+                    password: "Manny2023*",
                     nombre: "Manny",
                     apellido: "Manny",
                     email: "manny@manny.com",
@@ -171,7 +171,7 @@ app.post("/api/usuarios", async (req, res) => {
               event_name: "new_user_create",
               data: {
                 username: "Manny Manny",
-                password: "asd123",
+                password: "Manny2023*",
                 nombre: "Manny",
                 apellido: "Manny",
                 email: "manny@manny.com",

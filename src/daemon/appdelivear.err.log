@@ -557,3 +557,1187 @@ PayloadTooLargeError: request entity too large
     at Function.process_params (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:346:12)
     at next (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:280:10)
     at cors (C:\Users\Administrator\Proyectos\backend\node_modules\cors\lib\index.js:188:7)
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1708:21)
+    at IncomingMessage.emit (node:events:517:28)
+    at Readable.read (node:internal/streams/readable:550:10)
+    at flow (node:internal/streams/readable:1032:34)
+    at resume_ (node:internal/streams/readable:1013:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Proyectos\backend\src\index.js:1708:21)
+    at IncomingMessage.emit (node:events:517:28)
+    at Readable.read (node:internal/streams/readable:550:10)
+    at flow (node:internal/streams/readable:1032:34)
+    at resume_ (node:internal/streams/readable:1013:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+Error parsing JSON: Unexpected token < in JSON at position 0
+Error parsing JSON: Unexpected token < in JSON at position 0
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2108:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:561:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+LDAPError [NoSuchObjectError]: No Such Object
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event at:
+    at CorkedEmitter.emit (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\corked_emitter.js:44:33)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1239:22)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:18)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    [... lines matching original stack trace ...]
+    at readableAddChunk (node:internal/streams/readable:308:9) {
+  lde_message: 'No Such Object',
+  lde_dn: null
+}
+
+Node.js v18.18.2
+Error de autenticación: LDAPError [InvalidCredentialsError]: Invalid Credentials
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Invalid Credentials',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\src\index.js:188
+        res.status(201).send("Usuario creado con éxito en el servidor LDAP");
+            ^
+
+TypeError: Cannot read properties of undefined (reading 'status')
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:188:13
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+
+Node.js v18.18.2
+Error de autenticación: LDAPError [InvalidCredentialsError]: Invalid Credentials
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1267:45)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+    at readableAddChunk (node:internal/streams/readable:308:9)
+    at Readable.push (node:internal/streams/readable:245:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  lde_message: 'Invalid Credentials',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:580:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                      ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:1845:16
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Proyectos\backend\node_modules\express\lib\router\index.js:280:10)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:580:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+Error al agregar usuario en el servidor LDAP: ConnectionError: 1__ldap://34.231.51.201:389 closed
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1120:17
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:123:7
+    at Map.forEach (<anonymous>)
+    at Object.purgeMessages [as purge] (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:120:14)
+    at Client._onClose (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1118:11)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at TCP.<anonymous> (node:net:350:12) {
+  lde_message: '1__ldap://34.231.51.201:389 closed',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2170:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:610:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2220:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2220:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2220:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87
+    throw new Error('invalid DN')
+    ^
+
+Error: invalid DN
+    at ensureDN (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:87:11)
+    at Client.search (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:596:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:2220:18
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
+C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177
+    child.send('shutdown');
+          ^
+
+TypeError: Cannot read properties of null (reading 'send')
+    at process.killkid (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:177:11)
+    at process.emit (node:events:517:28)
+    at process.exit (node:internal/process/per_thread:192:15)
+    at monitor (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:99:17)
+    at ChildProcess.<anonymous> (C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js:170:5)
+    at ChildProcess.emit (node:events:517:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:292:12)
+
+Node.js v18.18.2
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 34.231.51.201:389
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+Emitted 'error' event on Client instance at:
+    at Client.emitError (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1342:10)
+    at Backoff.<anonymous> (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1075:12)
+    at Backoff.emit (node:events:517:28)
+    at Backoff.backoff (C:\Users\Administrator\Proyectos\backend\node_modules\backoff\lib\backoff.js:41:14)
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1061:15
+    at f (C:\Users\Administrator\Proyectos\backend\node_modules\once\once.js:25:25)
+    at Socket.onResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:814:7)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8) {
+  errno: -4078,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '34.231.51.201',
+  port: 389
+}
+
+Node.js v18.18.2
