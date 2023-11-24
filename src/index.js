@@ -1832,7 +1832,7 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
 });
 
 //Este endpoint notifica el resultado de la carrera
-app.get("/api/deepracer/notify", async (req, res) => {
+app.post("/api/deepracer/notify", async (req, res) => {
   http
     .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
       let data = "";
