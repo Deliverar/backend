@@ -626,3 +626,99 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
 2023-11-24 02:02:43 - Finished appdelivear.exe
 2023-11-24 02:02:45 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2023-11-24 02:02:45 - Started 6316
+2023-11-24 02:07:44 - Stopping appdelivear.exe
+2023-11-24 02:07:44 - ProcessKill 6316
+2023-11-24 02:07:44 - Found child process: 5696 Name: conhost.exe
+2023-11-24 02:07:44 - Found child process: 5244 Name: node.exe
+2023-11-24 02:07:44 - Stopping process 5696
+2023-11-24 02:07:44 - Send SIGINT 5696
+2023-11-24 02:07:44 - SIGINT to 5696 failed - Killing as fallback
+2023-11-24 02:07:44 - Stopping process 5244
+2023-11-24 02:07:44 - Send SIGINT 5244
+2023-11-24 02:07:44 - SIGINT to 5244 failed - Killing as fallback
+2023-11-24 02:07:44 - Stopping process 6316
+2023-11-24 02:07:44 - Send SIGINT 6316
+2023-11-24 02:07:44 - SIGINT to 6316 failed - Killing as fallback
+2023-11-24 02:07:44 - Finished appdelivear.exe
+2023-11-24 02:07:46 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:07:46 - Started 7004
+2023-11-24 02:22:05 - Stopping appdelivear.exe
+2023-11-24 02:22:05 - ProcessKill 7004
+2023-11-24 02:22:05 - Found child process: 1560 Name: conhost.exe
+2023-11-24 02:22:05 - Found child process: 5240 Name: node.exe
+2023-11-24 02:22:05 - Stopping process 1560
+2023-11-24 02:22:05 - Send SIGINT 1560
+2023-11-24 02:22:05 - SIGINT to 1560 failed - Killing as fallback
+2023-11-24 02:22:05 - Stopping process 5240
+2023-11-24 02:22:05 - Send SIGINT 5240
+2023-11-24 02:22:05 - SIGINT to 5240 failed - Killing as fallback
+2023-11-24 02:22:05 - Stopping process 7004
+2023-11-24 02:22:05 - Send SIGINT 7004
+2023-11-24 02:22:05 - SIGINT to 7004 failed - Killing as fallback
+2023-11-24 02:22:05 - Finished appdelivear.exe
+2023-11-24 02:22:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:22:06 - Started 2464
+2023-11-24 02:26:34 - Stopping appdelivear.exe
+2023-11-24 02:26:34 - ProcessKill 2464
+2023-11-24 02:26:34 - Found child process: 5576 Name: conhost.exe
+2023-11-24 02:26:34 - Found child process: 4040 Name: node.exe
+2023-11-24 02:26:34 - Stopping process 5576
+2023-11-24 02:26:34 - Send SIGINT 5576
+2023-11-24 02:26:34 - SIGINT to 5576 failed - Killing as fallback
+2023-11-24 02:26:34 - Stopping process 4040
+2023-11-24 02:26:34 - Send SIGINT 4040
+2023-11-24 02:26:34 - SIGINT to 4040 failed - Killing as fallback
+2023-11-24 02:26:34 - Stopping process 2464
+2023-11-24 02:26:34 - Send SIGINT 2464
+2023-11-24 02:26:34 - SIGINT to 2464 failed - Killing as fallback
+2023-11-24 02:26:34 - Finished appdelivear.exe
+2023-11-24 02:26:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:26:35 - Started 6228
+2023-11-24 02:35:31 - Stopping appdelivear.exe
+2023-11-24 02:35:31 - ProcessKill 6228
+2023-11-24 02:35:31 - Found child process: 4396 Name: conhost.exe
+2023-11-24 02:35:31 - Found child process: 2864 Name: node.exe
+2023-11-24 02:35:31 - Stopping process 4396
+2023-11-24 02:35:31 - Send SIGINT 4396
+2023-11-24 02:35:31 - SIGINT to 4396 failed - Killing as fallback
+2023-11-24 02:35:31 - Stopping process 2864
+2023-11-24 02:35:31 - Send SIGINT 2864
+2023-11-24 02:35:31 - SIGINT to 2864 failed - Killing as fallback
+2023-11-24 02:35:31 - Stopping process 6228
+2023-11-24 02:35:31 - Send SIGINT 6228
+2023-11-24 02:35:31 - SIGINT to 6228 failed - Killing as fallback
+2023-11-24 02:35:31 - Finished appdelivear.exe
+2023-11-24 02:35:32 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:35:32 - Started 3304
+2023-11-24 02:38:56 - Stopping appdelivear.exe
+2023-11-24 02:38:56 - ProcessKill 3304
+2023-11-24 02:38:56 - Found child process: 5576 Name: conhost.exe
+2023-11-24 02:38:56 - Found child process: 7156 Name: node.exe
+2023-11-24 02:38:56 - Stopping process 5576
+2023-11-24 02:38:56 - Send SIGINT 5576
+2023-11-24 02:38:56 - SIGINT to 5576 failed - Killing as fallback
+2023-11-24 02:38:56 - Stopping process 7156
+2023-11-24 02:38:56 - Send SIGINT 7156
+2023-11-24 02:38:56 - SIGINT to 7156 failed - Killing as fallback
+2023-11-24 02:38:56 - Stopping process 3304
+2023-11-24 02:38:56 - Send SIGINT 3304
+2023-11-24 02:38:56 - SIGINT to 3304 failed - Killing as fallback
+2023-11-24 02:38:56 - Finished appdelivear.exe
+2023-11-24 02:38:57 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:38:57 - Started 3036
+2023-11-24 02:56:15 - Stopping appdelivear.exe
+2023-11-24 02:56:15 - ProcessKill 3036
+2023-11-24 02:56:15 - Found child process: 840 Name: conhost.exe
+2023-11-24 02:56:15 - Found child process: 4212 Name: node.exe
+2023-11-24 02:56:15 - Stopping process 840
+2023-11-24 02:56:15 - Send SIGINT 840
+2023-11-24 02:56:15 - SIGINT to 840 failed - Killing as fallback
+2023-11-24 02:56:15 - Stopping process 4212
+2023-11-24 02:56:15 - Send SIGINT 4212
+2023-11-24 02:56:15 - SIGINT to 4212 failed - Killing as fallback
+2023-11-24 02:56:15 - Stopping process 3036
+2023-11-24 02:56:15 - Send SIGINT 3036
+2023-11-24 02:56:15 - SIGINT to 3036 failed - Killing as fallback
+2023-11-24 02:56:15 - Finished appdelivear.exe
+2023-11-24 02:56:16 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\AppData\Roaming\npm\node_modules\qckwinsvc\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Proyectos\backend\src\index.js --log "AppDeliveAr wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-11-24 02:56:16 - Started 5468

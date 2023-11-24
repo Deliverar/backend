@@ -2060,3 +2060,66 @@ Error al agregar usuario en el servidor LDAP: ConnectionError: 1__ldap://34.231.
   lde_message: '1__ldap://34.231.51.201:389 closed',
   lde_dn: null
 }
+Error al agregar usuario en el servidor LDAP: ReferenceError: userName is not defined
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:198:27
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+Error al agregar usuario en el servidor LDAP: ConnectionError: 1__ldap://34.231.51.201:389 closed
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1120:17
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:123:7
+    at Map.forEach (<anonymous>)
+    at Object.purgeMessages [as purge] (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:120:14)
+    at Client._onClose (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1118:11)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at TCP.<anonymous> (node:net:350:12) {
+  lde_message: '1__ldap://34.231.51.201:389 closed',
+  lde_dn: null
+}
+Error al agregar usuario en el servidor LDAP: ReferenceError: cn is not defined
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:198:27
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+    at Socket.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:335:12)
+Error al agregar usuario en el servidor LDAP: ConnectionError: 1__ldap://34.231.51.201:389 closed
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1120:17
+    at C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:123:7
+    at Map.forEach (<anonymous>)
+    at Object.purgeMessages [as purge] (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\message-tracker\index.js:120:14)
+    at Client._onClose (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1118:11)
+    at Object.onceWrapper (node:events:632:26)
+    at Socket.emit (node:events:517:28)
+    at TCP.<anonymous> (node:net:350:12) {
+  lde_message: '1__ldap://34.231.51.201:389 closed',
+  lde_dn: null
+}
+C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314
+                throw new TypeError('There is no underlying STOMP connection');
+                ^
+
+TypeError: There is no underlying STOMP connection
+    at Client._checkConnection (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1314:23)
+    at Client.publish (C:\Users\Administrator\Proyectos\backend\node_modules\@stomp\stompjs\bundles\stomp.umd.js:1308:18)
+    at C:\Users\Administrator\Proyectos\backend\src\index.js:635:21
+    at callbackWrapper (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:296:5)
+    at sendResult (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1244:12)
+    at messageCallback (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:1269:16)
+    at Parser.onMessage (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:925:14)
+    at Parser.emit (node:events:517:28)
+    at Parser.write (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\messages\parser.js:135:8)
+    at Socket.onData (C:\Users\Administrator\Proyectos\backend\node_modules\ldapjs\lib\client\client.js:875:22)
+
+Node.js v18.18.2
