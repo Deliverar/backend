@@ -1864,8 +1864,62 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
     });
 });
 
+
 //Este endpoint notifica el resultado de la carrera
 app.post("/api/deepracer/notify", async (req, res) => {
+  http
+    .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
+      let data = "";
+
+      // Un fragmento de datos ha sido recibido.
+      httpRes.on("data", (chunk) => {
+        data += chunk;
+      });
+
+      // La respuesta completa ha sido recibida. Procesar el resultado.
+      httpRes.on("end", () => {
+        try {
+          const response = JSON.parse(data);
+
+          //Inicio Evento resultado de carrera
+          const usuarios = [
+            { robotAlias:"Lucas-Mino" ,nombre: "Lucas Miño", dni: "16234777" },
+            { robotAlias:'BackloggedCoder#2267' ,nombre: "Antonella Roccuzzo", dni: "33513483" },
+            { robotAlias: 'MauroSangalli',nombre: "Mauro Sangalli", dni: "33487333" },
+          ];
+          
+
+          stompClient.publish({
+            destination: "/app/send/admin-personal",
+            body: JSON.stringify({
+              sender: "admin-personal",
+              created_at: new Date().getTime(),
+              event_name: "race_result",
+              data: {
+                Ganadores: usuarios,
+                data: response
+                
+              },
+            }),
+          });
+          //Fin Evento resultado de carrera
+          res.json(response);
+        } catch (e) {
+          console.error(`Error parsing JSON: ${e.message}`);
+          res.status(500).send("Internal Server Error");
+        }
+      });
+    })
+    .on("error", (err) => {
+      console.error(`Error: ${err.message}`);
+      res.status(500).send("Internal Server Error");
+    });
+});
+
+  
+
+//Este endpoint notifica el resultado de la carrera
+/* app.post("/api/deepracer/notify", async (req, res) => {
   http
     .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
       let data = "";
@@ -1923,7 +1977,69 @@ app.post("/api/deepracer/notify", async (req, res) => {
       console.error(`Error: ${err.message}`);
       res.status(500).send("Internal Server Error");
     });
-});
+}); 
+
+
+/* app.post("/api/deepracer/notify", async (req, res) => {
+  
+  http
+    .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
+      let data = "";
+
+      // Un fragmento de datos ha sido recibido.
+      httpRes.on("data", (chunk) => {
+        data += chunk;
+      });
+
+      // La respuesta completa ha sido recibida. Procesar el resultado.
+      httpRes.on("end", () => {
+        try {
+          const data_parsed = JSON.parse(data);
+
+          //Inicio Evento resultado de carrera
+          const dnis = [
+            "16.234.777",
+            "32.323.555",
+            "33.487.333",
+            "33.476.765",
+            "35.876.999",
+            "26.446.321",
+            "16.555.316",
+            "38.888.123",
+            "31.123.987",
+            "23.666.001",
+            "38.126.090",
+            "19.767.309",
+          ];
+          const response = data_parsed.map((item, i) => ({
+            ...item,
+            dni: dnis[i],
+          }));
+
+          stompClient.publish({
+            destination: "/app/send/admin-personal",
+            body: JSON.stringify({
+              sender: "admin-personal",
+              created_at: new Date().getTime(),
+              event_name: "race_result",
+              data: {
+                data: response,
+              },
+            }),
+          });
+          //Fin Evento resultado de carrera
+          res.json(response);
+        } catch (e) {
+          console.error(`Error parsing JSON: ${e.message}`);
+          res.status(500).send("Internal Server Error");
+        }
+      });
+    })
+    .on("error", (err) => {
+      console.error(`Error: ${err.message}`);
+      res.status(500).send("Internal Server Error");
+    });
+}); */
 
 // Endpoint de pago
 app.post("/api/payment/pay", async (req, res) => {
