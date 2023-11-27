@@ -117,38 +117,20 @@ app.post("/api/usuarios", async (req, res) => {
                   created_at: new Date().getTime(),
                   event_name: "new_user_create",
                   data: {
-                    // cn: name,
-        //sn: lastname,
-        //uid: email,
-        //userPassword: password,
-        //uidNumber: "1003",
-        //gidNumber: "501",
-        //homeDirectory: `/home/users/${name + lastname}`,
-        //loginShell: "/bin/bash",
-        //mail: email,
-        //postalCode: birthDate,
-        //carLicense: dni,
-                    /* username: "Bill Gates",
-                    password: "BillG2023*",
-                    nombre: "Bill",
-                    apellido: "Gates",
-                    email: "billgates@deliver.ar",
-                    carLicense: "16928165",
-                    grupo: "509", */
                     username: "Bill Gates",
                     password: "BillG2023*",
                     nombre: "Bill",
                     apellido: "Gates",
                     email: "billgates@deliver.ar",
                     carLicense: "16928165",
-                    grupo: "509", 
-                   /*  username: cn + sn,
-                    password: userPassword,
-                    nombre: cn ,
-                    apellido: sn,
-                    email: mail,
-                    carLicense: carLicense,
-                    grupo: "509", */ 
+                    grupo: "509",
+                   /*  username: "Manny Manny",
+                    password: "Manny2023*",
+                    nombre: "Manny",
+                    apellido: "Manny",
+                    email: "manny@manny.com.ar",
+                    carLicense: "35242781",
+                    grupo: "500", */
                   },
                 }),
               });
@@ -195,20 +177,13 @@ app.post("/api/usuarios", async (req, res) => {
               created_at: new Date().getTime(),
               event_name: "new_user_create",
               data: {
-               /*  username: "Manny Manny",
+                /* username: "Manny Manny",
                 password: "Manny2023*",
                 nombre: "Manny",
                 apellido: "Manny",
-                email: "manny@manny.com",
+                email: "manny@manny.com.ar",
                 carLicense: "35242781",
-                grupo: "500", */
-               /* username: "Bill Gates",
-                password: "BillG2023*",
-                nombre: "Bill",
-                apellido: "Gates",
-                email: "billgates@deliver.ar",
-                carLicense: "16928165",
-                grupo: "509", */
+                grupo: "500", */ 
                 username: "Bill Gates",
                 password: "BillG2023*",
                 nombre: "Bill",
@@ -216,7 +191,6 @@ app.post("/api/usuarios", async (req, res) => {
                 email: "billgates@deliver.ar",
                 carLicense: "16928165",
                 grupo: "509",
-                    
               },
             }),
           });
@@ -1864,7 +1838,6 @@ app.get("/api/deepracer/leaderboard", async (req, res) => {
     });
 });
 
-
 //Este endpoint notifica el resultado de la carrera
 app.post("/api/deepracer/notify", async (req, res) => {
   http
@@ -1916,72 +1889,8 @@ app.post("/api/deepracer/notify", async (req, res) => {
     });
 });
 
-  
-
-//Este endpoint notifica el resultado de la carrera
-/* app.post("/api/deepracer/notify", async (req, res) => {
-  http
-    .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
-      let data = "";
-
-      // Un fragmento de datos ha sido recibido.
-      httpRes.on("data", (chunk) => {
-        data += chunk;
-      });
-
-      // La respuesta completa ha sido recibida. Procesar el resultado.
-      httpRes.on("end", () => {
-        try {
-          const data_parsed = JSON.parse(data);
-
-          //Inicio Evento resultado de carrera
-          const dnis = [
-            "16.234.777",
-            "32.323.555",
-            "33.487.333",
-            "33.476.765",
-            "35.876.999",
-            "26.446.321",
-            "16.555.316",
-            "38.888.123",
-            "31.123.987",
-            "23.666.001",
-            "38.126.090",
-            "19.767.309",
-          ];
-          const response = data_parsed.map((item, i) => ({
-            ...item,
-            dni: dnis[i],
-          }));
-
-          stompClient.publish({
-            destination: "/app/send/admin-personal",
-            body: JSON.stringify({
-              sender: "admin-personal",
-              created_at: new Date().getTime(),
-              event_name: "race_result",
-              data: {
-                data: response,
-              },
-            }),
-          });
-          //Fin Evento resultado de carrera
-          res.json(response);
-        } catch (e) {
-          console.error(`Error parsing JSON: ${e.message}`);
-          res.status(500).send("Internal Server Error");
-        }
-      });
-    })
-    .on("error", (err) => {
-      console.error(`Error: ${err.message}`);
-      res.status(500).send("Internal Server Error");
-    });
-}); 
-
-
-/* app.post("/api/deepracer/notify", async (req, res) => {
-  
+/* //Este endpoint notifica el resultado de la carrera
+app.post("/api/deepracer/notify", async (req, res) => {
   http
     .get(DEEPRACER_LEADEBOARD_URL, (httpRes) => {
       let data = "";
